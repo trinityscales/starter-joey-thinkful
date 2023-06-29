@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+  }
+  
+  header {
+    background-color: #0b1c51;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 52px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul {
+  /* Changes the dsplay from default to flex */
+  display: flex;
+  /* Removes the default padding to the left of the unordered list */
+  padding-left: 0;
+  /* Removes the bullet points form the list items */
+  list-style: none;
+  }
+  
+  header nav ul li a {
+   /* The link color is white. */
+   color: white;
+   /* Removes the underline from the link. */
+   text-decoration: none;
+   /* Applies 20px of margin to the right/legt of each link. */
+   margin: 0 20px 0;
+   font-family: montserrat;
+  }
+  
+  header nav ul li:last-child a {
+  /* Removes the margin tothe right of the last anchor
+  tag so the nav appears centered. */
+  margin-right: 0;
+  }
+  
+  /* When web browser is < 600px apply rules */
+  @media all and (min-width: 600px) {
+  header {
+    /* Changes to flex */
+    display: flex;
+    /* Pushes items to the far side with space between */
+    justify-content: space-between;
+    /* Adds 0px padding top/bottom and 30px left/right */
+    padding: 0 30px;
+  }
+  
+    header h1 {
+    /* Sets 14px margin above/below the h1 & 0px left/right. */
+    margin: 14px 0;
+    /* Removes padding above h1 */
+    padding-top: 6px;
+    font-size: 42px;
+  }
+  
+    header nav {
+    /* Pushes the nav container down 8px to make it
+    present better visually */
+    margin-top: 14px;
+  }
+  
+    /* Users can't hover on mobile so this is only for desktop. */
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
